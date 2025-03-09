@@ -25,7 +25,7 @@ export const TeamBox: React.FC<TeamBoxProps> = ({ team, icon, description, ...pr
 
   const onClick = () => {
     if (window.ReactNativeWebView && isApp) {
-      route.push(`/teams/${TEAM_TEXT_TO_ID[team]}`);
+      window.ReactNativeWebView.postMessage(TEAM_TEXT_TO_ID[team]);
     } else {
       route.push(`/teams/${TEAM_TEXT_TO_ID[team]}`);
     }
