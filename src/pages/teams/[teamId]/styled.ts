@@ -42,7 +42,6 @@ export const TeamList = styled.ul`
   align-items: center;
   column-gap: 2rem;
   row-gap: 0.4rem;
-  margin-top: 50px;
 `;
 
 export const TeamItem = styled.li<{ isActive: boolean }>`
@@ -55,4 +54,5 @@ export const TeamItem = styled.li<{ isActive: boolean }>`
   background-color: ${({ isActive }) => isActive && colors.qnaCard};
   transition: background-color 150ms;
   cursor: pointer;
+  margin-top: 50px;
 `;
