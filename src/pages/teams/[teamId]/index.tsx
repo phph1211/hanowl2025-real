@@ -20,13 +20,13 @@ export default function TeamPage() {
 
   const activeTeam = useMemo(() => TEAM_LIST.find((v) => v.id === teamId), [teamId]);
 
-  useEffect(() => {
-    setIsLoading(false);
-    if (window.ReactNativeWebView && teamId) {
-      window.ReactNativeWebView.postMessage(TEAM_ID_TO_TEXT[teamId as TeamId]);
-    }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [teamId]);
+  // useEffect(() => {
+  //   setIsLoading(false);
+  //   if (window.ReactNativeWebView && teamId) {
+  //     window.ReactNativeWebView.postMessage(TEAM_ID_TO_TEXT[teamId as TeamId]);
+  //   }
+  //   // eslint-disable-next-line react-hooks/exhaustive-deps
+  // }, [teamId]);
 
   return (
     <S.TeamContainer isApp={isApp}>
