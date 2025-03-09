@@ -32,6 +32,7 @@ export const TeamIntroduceContainer = styled.div<{ isApp: boolean }>`
     isApp &&
     css`
       padding: 0;
+      margin-top: 40px;
     `}
 `;
 
@@ -54,5 +55,4 @@ export const TeamItem = styled.li<{ isActive: boolean }>`
   background-color: ${({ isActive }) => isActive && colors.qnaCard};
   transition: background-color 150ms;
   cursor: pointer;
-  margin-top: 50px;
 `;
