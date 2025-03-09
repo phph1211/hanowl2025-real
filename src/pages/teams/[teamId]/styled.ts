@@ -32,7 +32,7 @@ export const TeamIntroduceContainer = styled.div<{ isApp: boolean }>`
     isApp &&
     css`
       padding: 0;
-      margin-top: 40px;
+      margin-top: 80px;
     `}
 `;
 
